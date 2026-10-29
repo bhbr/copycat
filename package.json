@@ -1,6 +1,6 @@
 {
   "name": "@bhbr/copycat",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Some functions for object copying (deep and shallow)",
   "type": "module",
   "main": "./dist/index.js",
@@ -16,7 +16,7 @@
     "!dist/_tests"
   ],
   "scripts": {
-    "build": "cd build && ./build.sh",
+    "build": "./build.sh",
     "test": "node dist/_tests/tests.js",
     "prepack": "npm run build"
   },
