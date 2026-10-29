@@ -1,0 +1,41 @@
+{
+  "name": "@bhbr/copycat",
+  "version": "1.0.0",
+  "description": "Some functions for object copying (deep and shallow)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist/",
+    "!dist/_tests"
+  ],
+  "scripts": {
+    "build": "cd build && ./build.sh",
+    "test": "node dist/_tests/tests.js",
+    "prepack": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhbr/copycat"
+  },
+  "bugs": {
+    "url": "https://github.com/bhbr/copycat/issues"
+  },
+  "homepage": "https://github.com/bhbr/copycat#readme",
+  "keywords": [],
+  "author": "Ben Hambrecht",
+  "license": "ISC",
+  "dependencies": {
+    "@bhbr/upper-class": "^1.0.1"
+  },
+  "devDependencies": {
+    "@bhbr/tsts": "^1.1.3",
+    "@bhbr/egalite": "^1.2.0"
+  }
+}
